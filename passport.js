@@ -1,7 +1,7 @@
 const passport = require("passport");
 const LocalStrategy = require("passport-local").Strategy;
 
-const UserService = require("./services/UserService");
+const UserService = require("./services/userService");
 const UserInstance = new UserService();
 const bcrypt = require("bcrypt");
 
