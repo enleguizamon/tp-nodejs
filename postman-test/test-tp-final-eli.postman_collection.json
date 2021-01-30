@@ -1,0 +1,326 @@
+{
+	"info": {
+		"_postman_id": "39dc8114-4f29-4c17-9a1d-808e17c9b0b2",
+		"name": "test-tp-final-eli",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://tp-nodejs-eli.herokuapp.com/users",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "https://tp-nodejs-eli.herokuapp.com/users",
+					"protocol": "https",
+					"host": [
+						"tp-nodejs-eli",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"users"
+					]
+				},
+				"description": "get users"
+			},
+			"response": []
+		},
+		{
+			"name": "https://tp-nodejs-eli.herokuapp.com/users/6015c8c835c66e4dd86e956e",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "https://tp-nodejs-eli.herokuapp.com/users/6015c8c835c66e4dd86e956e",
+					"protocol": "https",
+					"host": [
+						"tp-nodejs-eli",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"users",
+						"6015c8c835c66e4dd86e956e"
+					]
+				},
+				"description": "get user by id"
+			},
+			"response": []
+		},
+		{
+			"name": "https://tp-nodejs-eli.herokuapp.com/users/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"eli\",\r\n    \"password\": \"12345\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://tp-nodejs-eli.herokuapp.com/users/login",
+					"protocol": "https",
+					"host": [
+						"tp-nodejs-eli",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"users",
+						"login"
+					]
+				},
+				"description": "post-login admin user"
+			},
+			"response": []
+		},
+		{
+			"name": "https://tp-nodejs-eli.herokuapp.com/users",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"pepe\",\r\n    \"password\": \"12345\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://tp-nodejs-eli.herokuapp.com/users",
+					"protocol": "https",
+					"host": [
+						"tp-nodejs-eli",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"users"
+					]
+				},
+				"description": "post-add user"
+			},
+			"response": []
+		},
+		{
+			"name": "https://tp-nodejs-eli.herokuapp.com/users/edit/6015c8f835c66e4dd86ea600",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"data\": {\r\n        \"name\": \"juanchi\",\r\n        \"password\": \"12345\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://tp-nodejs-eli.herokuapp.com/users/edit/6015c8f835c66e4dd86ea600",
+					"protocol": "https",
+					"host": [
+						"tp-nodejs-eli",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"users",
+						"edit",
+						"6015c8f835c66e4dd86ea600"
+					]
+				},
+				"description": "edit user by id"
+			},
+			"response": []
+		},
+		{
+			"name": "https://tp-nodejs-eli.herokuapp.com/users/delete/6015e62d597f7300157219b3",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://tp-nodejs-eli.herokuapp.com/users/delete/6015e62d597f7300157219b3",
+					"protocol": "https",
+					"host": [
+						"tp-nodejs-eli",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"users",
+						"delete",
+						"6015e62d597f7300157219b3"
+					]
+				},
+				"description": "delete user"
+			},
+			"response": []
+		},
+		{
+			"name": "https://tp-nodejs-eli.herokuapp.com/movies",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://tp-nodejs-eli.herokuapp.com/movies",
+					"protocol": "https",
+					"host": [
+						"tp-nodejs-eli",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"movies"
+					]
+				},
+				"description": "get list of movies"
+			},
+			"response": []
+		},
+		{
+			"name": "https://tp-nodejs-eli.herokuapp.com/movies/6015c99d35c66e4dd86eee6f",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://tp-nodejs-eli.herokuapp.com/movies/6015c99d35c66e4dd86eee6f",
+					"protocol": "https",
+					"host": [
+						"tp-nodejs-eli",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"movies",
+						"6015c99d35c66e4dd86eee6f"
+					]
+				},
+				"description": "get movie by id"
+			},
+			"response": []
+		},
+		{
+			"name": "https://tp-nodejs-eli.herokuapp.com/movies",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/elian/Desktop/your-name.jpg"
+						},
+						{
+							"key": "name",
+							"value": "your name",
+							"type": "text"
+						},
+						{
+							"key": "category",
+							"value": "drama",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "movie",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://tp-nodejs-eli.herokuapp.com/movies",
+					"protocol": "https",
+					"host": [
+						"tp-nodejs-eli",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"movies"
+					]
+				},
+				"description": "post-add movie"
+			},
+			"response": []
+		},
+		{
+			"name": "https://tp-nodejs-eli.herokuapp.com/movies/edit/6015e8bc597f7300157219b4",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"data\": {\r\n        \"category\": \"fantasy\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://tp-nodejs-eli.herokuapp.com/movies/edit/6015e8bc597f7300157219b4",
+					"protocol": "https",
+					"host": [
+						"tp-nodejs-eli",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"movies",
+						"edit",
+						"6015e8bc597f7300157219b4"
+					]
+				},
+				"description": "put-edit movie by id"
+			},
+			"response": []
+		},
+		{
+			"name": "https://tp-nodejs-eli.herokuapp.com/movies/delete/6015e12d597f7300157219b2",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://tp-nodejs-eli.herokuapp.com/movies/delete/6015e12d597f7300157219b2",
+					"protocol": "https",
+					"host": [
+						"tp-nodejs-eli",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"movies",
+						"delete",
+						"6015e12d597f7300157219b2"
+					]
+				},
+				"description": "delete movie by id"
+			},
+			"response": []
+		}
+	]
+}
