@@ -20,7 +20,7 @@ app.set('port', port);
  */
 const mongoose = require("mongoose");
 
-mongoose.connect("mongodb://localhost:27017/tp", {
+mongoose.connect("mongodb+srv://admin:12345@cluster0.pb6q1.mongodb.net/tp-final?retryWrites=true&w=majority", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useFindAndModify:false,

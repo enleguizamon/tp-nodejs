@@ -9,12 +9,8 @@ class UserController {
   }
 
   async getUsers(req, res) {
-    const limit = parseInt(req.query.limit);
-    const page = parseInt(req.query.page);
-    let offset = limit * (page - 1);
-
     try {
-      const users = await this.userService.getUsers(offset, limit);
+      const users = await this.userService.getUsers();
       if (users) {
         return res.status(200).json(users);
       } else {

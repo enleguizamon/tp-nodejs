@@ -2,8 +2,8 @@ const User = require("./../models/userModel");
 const bcrypt = require("bcrypt");
 
 class UserService {
-  getUsers(offset, limit) {
-    const users = User.find({}).skip(offset).limit(limit).exec();
+  getUsers() {
+    const users = User.find({}).exec();
     return users;
   }
 
