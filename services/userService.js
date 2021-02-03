@@ -26,8 +26,10 @@ class UserService {
   }
 
   async editUser(id, data) {
-    const hash = await bcrypt.hash(data.password, 10);
-    data.password = hash;
+    if (data.password) {
+      const hash = await bcrypt.hash(data.password, 10);
+      data.password = hash;
+    } 
 
     const user = User.findByIdAndUpdate({ _id: id }, data).exec();
     return user;
@@ -35,13 +37,13 @@ class UserService {
 
   async deleteUser(id) {
     const response = await User.deleteOne({ _id: id });
-    //devuelve que está borrado por más que no exista ese id en la db   
+    //devuelve que está borrado por más que no exista ese id en la db
     //y {deletedCount: 0} en el console.log
     //para que no me diga borrado si el id no está en la db:
     if (response.deletedCount > 0) {
-      return true
+      return true;
     } else {
-      return false
+      return false;
     }
   }
 }

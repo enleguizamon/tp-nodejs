@@ -4,12 +4,13 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "start:dev": "nodemon ./bin/www"
+    "start:dev": "nodemon -r dotenv/config ./bin/www"
   },
   "dependencies": {
     "bcrypt": "^5.0.0",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
+    "dotenv": "^8.2.0",
     "express": "~4.16.1",
     "express-session": "^1.17.1",
     "mongoose": "^5.11.13",
@@ -18,5 +19,6 @@
     "nodemon": "^2.0.7",
     "passport": "^0.4.1",
     "passport-local": "^1.0.0"
-  }
+  },
+  "devDependencies": {}
 }
